@@ -24,11 +24,13 @@
   <main class="container-fluid">
     <div class="row">
       <div class="col-12 text-center mb-4">
+        <!-- NOTE onclick will call this function from our javascript file whenever this button is clicked -->
         <button onclick="selectAvocado()" class="fs-1">🥑</button>
         <button onclick="selectCoffee()" class="mx-5 fs-1">☕</button>
         <button onclick="selectBacon()" class="fs-1">🥓</button>
       </div>
       <div class="col-12 text-center mb-4">
+        <!-- NOTE passing down arguments to our function in javascript -->
         <button onclick="selectFood('🧀')" class="fs-1">🧀</button>
         <button onclick="selectFood('🥯')" class="mx-5 fs-1">🥯</button>
         <button onclick="selectFood('🌭')" class="fs-1">🌭</button>
@@ -40,10 +42,12 @@
       </div>
       <div class="col-12 p-5">
         <h2>
+          <!-- NOTE This span has an ID so that it can be targeted by our javascript and changed -->
           This is your secret code: <span id="secretCode"></span>
         </h2>
       </div>
       <div class="col-12">
+        <!-- NOTE the source on this element is set by javascript -->
         <img id="secretImage" src="" alt="secret image">
       </div>
     </div>
