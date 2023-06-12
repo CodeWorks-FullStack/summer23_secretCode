@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Secret Code</title>
+</head>
+
+<body>
+
+  <header class="container-fluid">
+    <div class="row">
+      <div class="col-12 p-4">
+        <h1>Secret Code</h1>
+      </div>
+    </div>
+  </header>
+
+  <main class="container-fluid">
+    <div class="row">
+      <div class="col-12 text-center mb-4">
+        <button onclick="selectAvocado()" class="fs-1">🥑</button>
+        <button onclick="selectCoffee()" class="mx-5 fs-1">☕</button>
+        <button onclick="selectBacon()" class="fs-1">🥓</button>
+      </div>
+      <div class="col-12 text-center mb-4">
+        <button onclick="selectFood('🧀')" class="fs-1">🧀</button>
+        <button onclick="selectFood('🥯')" class="mx-5 fs-1">🥯</button>
+        <button onclick="selectFood('🌭')" class="fs-1">🌭</button>
+      </div>
+      <div class="col-12 text-center">
+        <button onclick="checkSecretCode()" class="btn btn-success">
+          Check your secret code
+        </button>
+      </div>
+      <div class="col-12 p-5">
+        <h2>
+          This is your secret code: <span id="secretCode"></span>
+        </h2>
+      </div>
+      <div class="col-12">
+        <img id="secretImage" src="" alt="secret image">
+      </div>
+    </div>
+  </main>
+
+  <!-- NOTE link to js files go in the bottom of the body -->
+  <script src="app.js"></script>
+</body>
+
+</html>
